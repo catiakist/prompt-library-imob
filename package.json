@@ -1,74 +1,18 @@
-# 📁 Biblioteca de Prompts · Imóveis IA
-
-App de biblioteca de prompts para criação de vídeos e imagens imobiliárias com IA.  
-55 prompts pré-carregados · Busca · Filtros · Copiar com 1 clique · Adicionar novos via IA
-
----
-
-## 🚀 Deploy no Vercel (passo a passo)
-
-### 1. Suba para o GitHub
-
-1. Acesse [github.com](https://github.com) e faça login
-2. Clique em **New repository**
-3. Nome sugerido: `prompt-library-imob`
-4. Deixe como **Private** (recomendado) e clique em **Create repository**
-5. Na página do repositório vazio, clique em **uploading an existing file**
-6. Arraste **todos os arquivos desta pasta** (exceto a pasta `node_modules` e `dist`)
-7. Clique em **Commit changes**
-
-### 2. Conecte ao Vercel
-
-1. Acesse [vercel.com](https://vercel.com) e faça login com sua conta GitHub
-2. Clique em **Add New Project**
-3. Selecione o repositório `prompt-library-imob`
-4. As configurações são detectadas automaticamente (Vite + React)
-5. Clique em **Deploy**
-6. Em ~60 segundos seu app está no ar com uma URL pública
-
----
-
-## 🛠 Rodar localmente
-
-```bash
-npm install
-npm run dev
-```
-
-Acesse: http://localhost:5173
-
----
-
-## ✨ Funcionalidades
-
-- **55 prompts pré-carregados** (bloco de notas + PDFs)
-- **Busca** por descrição, palavra-chave ou tag
-- **Filtros** por categoria e ferramenta
-- **Copiar** o prompt com 1 clique
-- **Ver** prompt completo + tradução
-- **Editar** descrição, categoria, ferramenta e tags
-- **Variações** — salve versões alternativas do mesmo prompt
-- **+ Novo prompt** — cole qualquer prompt e a IA traduz e categoriza automaticamente
-- **Salva tudo localmente** no navegador (localStorage)
-
----
-
-## 📂 Categorias
-
-| Categoria | Uso |
-|-----------|-----|
-| Exterior | Fachadas, renders externos, lifestyle |
-| Interior | Ambientes internos, staging virtual |
-| Aéreo | Drones, masterplans, vistas oblíquas |
-| Movimento | Plano-sequência, timelapse, zoom |
-| Detalhe | BIM, MEP, cortes técnicos, plantas |
-| Texto/Animação | Texto 3D, hologramas, neon, wireframe |
-| Geral | Diagramas, estilos, utilitários |
-
-## 🔧 Ferramentas suportadas
-
-Kling · Nano Banana · VEO3/VO3 · Sora · HeyGen · Grok · Geral
-
----
-
-Desenvolvido com React + Vite · Deploy via Vercel
+{
+  "name": "prompt-library-imob",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
+  }
+}
